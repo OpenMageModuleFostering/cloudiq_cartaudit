@@ -1,0 +1,16 @@
+HTTP/1.1 202 Accepted
+Date: Mon, 12 Aug 2013 14:44:58 GMT
+Server: Apache-Coyote/1.1
+X-powered-by: Servlet 2.4; JBoss-4.0.5.GA (build: CVSTag=Branch_4_0 date=200610162339)/Tomcat-5.5
+Content-type: text/html;charset=ISO-8859-1
+Content-length: 242
+Via: 1.1 nimbus.cloud-iq.com
+Connection: Keep-Alive
+
+<?xml version="1.0" encoding="utf-8" ?>
+<response status="104">
+    <description>Request missing a mandatory parameter</description>
+    <requestId>300175</requestId>
+    <dateTime>2013-08-12T14:44:58Z</dateTime>
+    <timeZone>GMT</timeZone>
+</response>

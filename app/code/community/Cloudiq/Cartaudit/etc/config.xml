@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Cloudiq_Cartaudit>
+            <version>1.0.0</version>
+        </Cloudiq_Cartaudit>
+    </modules>
+
+    <global>
+        <blocks>
+            <cloudiq_cartaudit>
+                <class>Cloudiq_Cartaudit_Block</class>
+            </cloudiq_cartaudit>
+        </blocks>
+        <models>
+            <cloudiq_cartaudit>
+                <class>Cloudiq_Cartaudit_Model</class>
+            </cloudiq_cartaudit>
+        </models>
+        <helpers>
+            <cloudiq_cartaudit>
+                <class>Cloudiq_Cartaudit_Helper</class>
+            </cloudiq_cartaudit>
+        </helpers>
+
+        <resources>
+            <cloudiq_cartaudit_setup>
+                <setup>
+                    <module>Cloudiq_Cartaudit</module>
+                </setup>
+            </cloudiq_cartaudit_setup>
+        </resources>
+
+        <events>
+            <cloudiq_core_config_save>
+                <observers>
+                    <cloudiq_cartaudit>
+                        <type>singleton</type>
+                        <class>cloudiq_cartaudit/observer</class>
+                        <method>observeCloudiqCoreConfigSave</method>
+                    </cloudiq_cartaudit>
+                </observers>
+            </cloudiq_core_config_save>
+        </events>
+    </global>
+
+    <frontend>
+        <layout>
+            <updates>
+                <cloudiq_cartaudit>
+                    <file>cloudiq/cartaudit.xml</file>
+                </cloudiq_cartaudit>
+            </updates>
+        </layout>
+    </frontend>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <cloudiq_cartaudit>
+                    <file>cloudiq/cartaudit.xml</file>
+                </cloudiq_cartaudit>
+            </updates>
+        </layout>
+    </adminhtml>
+
+    <phpunit>
+        <suite>
+            <modules>
+                <Cloudiq_Cartaudit/>
+            </modules>
+        </suite>
+    </phpunit>
+</config>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<layout>
+    <adminhtml_cloudiq_edit>
+        <reference name="head">
+            <action method="addCss"><stylesheet>cloudiq/cartaudit.css</stylesheet></action>
+        </reference>
+        <reference name="left">
+            <reference name="cloudiq.config.edit.tabs">
+                <block type="cloudiq_cartaudit/adminhtml_config_edit_tab_cartaudit" name="cloudiq.config.edit.tab.cartaudit">
+                    <action method="setAfter">
+                        <after>global_section</after>
+                    </action>
+                </block>
+                <action method="addTab">
+                    <name>cartaudit_section</name>
+                    <block>cloudiq.config.edit.tab.cartaudit</block>
+                </action>
+            </reference>
+        </reference>
+    </adminhtml_cloudiq_edit>
+</layout>

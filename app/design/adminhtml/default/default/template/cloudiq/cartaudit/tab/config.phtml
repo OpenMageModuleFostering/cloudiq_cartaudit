@@ -1,0 +1,46 @@
+<?php
+/**
+ * Form template for the Cloudiq_Cartaudit configuration form.
+ *
+ * Based on default/default/template/widget/form.phtml
+ */
+
+/** @var Cloudiq_Cartaudit_Block_Adminhtml_Config_Edit_Tab_Cartaudit $this */
+?>
+<div class="entry-edit">
+    <?php echo $this->getFormHtml();?>
+    <?php if($this->_config->canEstimateRevenueLost()): ?>
+        <div class="entry-edit-head">
+            <h4><?php echo $this->__("Save your details and we'll calculate what you could potentially recover"); ?></h4>
+        </div>
+        <div class="fieldset">
+            <div class="hor-scroll">
+                <table cellspacing="0" class="form-list">
+                    <tbody>
+                        <tr>
+                            <td class="label"><?php echo $this->__('Average cart value'); ?></td>
+                            <td class="value"><?php echo Mage::helper('core')->formatCurrency($this->_config->getAverageCartValue()); ?></td>
+                        </tr>
+                        <tr>
+                            <td class="label"><?php echo $this->__('Carts started per month'); ?></td>
+                            <td class="value"><?php echo $this->_config->getCartsStartedPerMonth(); ?></td>
+                        </tr>
+                        <tr>
+                            <td class="label"><?php echo $this->__('Carts completed per month'); ?></td>
+                            <td class="value"><?php echo $this->_config->getCartsCompletedPerMonth(); ?></td>
+                        </tr>
+                        <tr>
+                            <td class="label"><?php echo $this->__('Drop off rate'); ?></td>
+                            <td class="value"><?php echo round($this->_config->calculateDropOffRate(), 2); ?>%</td>
+                        </tr>
+                        <tr>
+                            <td class="label"><?php echo $this->__('Revenue lost'); ?></td>
+                            <td class="value"><?php echo Mage::helper('core')->formatCurrency($this->_config->calculateRevenueLost()); ?></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    <?php endif; ?>
+</div>
+<?php echo $this->getChildHtml('form_after');?>

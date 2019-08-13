@@ -1,0 +1,11 @@
+config:
+  default/cloudiq/cartaudit/enabled: 1
+  default/cloudiq/cartaudit/app_id: 123
+  default/cloudiq/cartaudit/cloudiq_tag: test
+  default/cloudiq/cartaudit/app_name: cloud.IQ
+  default/cloudiq/cartaudit/industry: technology
+  default/cloudiq/cartaudit/website_url: http://www.cloud-iq.com/
+  default/cloudiq/cartaudit/cart_confirmation_url: http://www.cloud-iq.com/checkout/success
+  default/cloudiq/cartaudit/average_cart_value: 9.99
+  default/cloudiq/cartaudit/carts_started_per_month: 100
+  default/cloudiq/cartaudit/carts_completed_per_month: 30

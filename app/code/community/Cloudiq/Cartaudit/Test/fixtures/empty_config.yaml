@@ -1,0 +1,10 @@
+config:
+  default/cloudiq/cartaudit/enabled:
+  default/cloudiq/cartaudit/app_id:
+  default/cloudiq/cartaudit/app_name:
+  default/cloudiq/cartaudit/industry:
+  default/cloudiq/cartaudit/website_url:
+  default/cloudiq/cartaudit/cart_confirmation_url:
+  default/cloudiq/cartaudit/average_cart_value:
+  default/cloudiq/cartaudit/carts_started_per_month:
+  default/cloudiq/cartaudit/carts_completed_per_month:

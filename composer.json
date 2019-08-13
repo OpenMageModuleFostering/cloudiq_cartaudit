@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Cloudiq_Cartaudit",
+    "type": "magento-module",
+    "license": "Commercial-License",
+    "homepage": "",
+    "description": "cartAudit extension provides a free interactive dashboard tracking cart abandonment and an option to send recovery emails if you upgrade to a paid account.",
+    "authors": [
+    {
+        "name": "cloud.IQ",
+        "email": "sales@cloud-iq.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

@@ -1,0 +1,11 @@
+-
+  -
+    enabled: 1
+    app_id: 123
+    app_name: cloud.IQ
+    industry: technology
+    website_url: http://www.cloud-iq.com/
+    cart_confirmation_url: http://www.cloud-iq.com/checkout/success
+    average_cart_value: 9.99
+    carts_started_per_month: 100
+    carts_completed_per_month: 30

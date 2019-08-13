@@ -1,0 +1,19 @@
+HTTP/1.1 202 Accepted
+Date: Mon, 12 Aug 2013 14:46:37 GMT
+Server: Apache-Coyote/1.1
+X-powered-by: Servlet 2.4; JBoss-4.0.5.GA (build: CVSTag=Branch_4_0 date=200610162339)/Tomcat-5.5
+Content-type: text/html;charset=ISO-8859-1
+Content-length: 276
+Via: 1.1 nimbus.cloud-iq.com
+Connection: Keep-Alive
+
+<?xml version="1.0" encoding="utf-8" ?>
+<response status="1">
+    <description>Success</description>
+    <requestId>300176</requestId>
+    <dateTime>2013-08-12T14:46:36Z</dateTime>
+    <timeZone>GMT</timeZone>
+    <cartAudit status="1">
+        <cloudIqTag>&lt;script type=&quot;text/javascript&quot; id=&quot;cloudiq_cartrecovery&quot;&gt;(function(){function e(){var e=document.createElement(&quot;script&quot;);e.type=&quot;text/javascript&quot;;e.async=true;e.src=&quot;http://nimbus.cloud-iq.com/nc_uat_cartrecovery/store.js?app_id=1234&quot;;var t=document.getElementById(&quot;cloudiq_cartrecovery&quot;);t.parentNode.insertBefore(e,t)}if(window.attachEvent)window.attachEvent(&quot;onload&quot;,e);else window.addEventListener(&quot;load&quot;,e,false)})()&lt;/script&gt;</cloudIqTag>
+    </cartAudit>
+</response>
